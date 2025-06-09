@@ -75,3 +75,17 @@ my-springboot-project/
 AuthController.java               # Quản lí đăng nhập
 UserCatalogueController.java      # Quản lí nhóm
 UserController.java               # Quản lí người dùng
+
+III.migartion và đưa dữ liệu vào database
+1.
+tạo bảng student và bảng lớp đánh khóa ngoại cho bảng student và thêm cột age vào bảng student.
+2.
+taoj file DatabaseSeeder đưa chèn dữ liệu đầu vào khi khởi động.
+3.
+tạo file SecurityConfig trong folder config và viết mã passwordEncoder.
+
+IV.xây dựng lớp repository
+1. sử dụng JpaRepository để đưa dữ liệu vào database
+
+V. validate dữ liệu
+1. Sử dung @Validated và @Valid trong AuthController

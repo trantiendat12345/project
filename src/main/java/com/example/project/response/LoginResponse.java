@@ -1,23 +1,23 @@
 package com.example.project.response;
 
-import com.example.project.dto.UserDTO;
+import com.example.project.dto.StudentDTO;
 
 public class LoginResponse {
     
     private final String token;
-    private final UserDTO UserDTO;
+    private final StudentDTO studentDTO;
 
-    public LoginResponse(String token, UserDTO userDTO) {
+    public LoginResponse(String token, StudentDTO userDTO) {
         this.token = token;
-        this.UserDTO = userDTO;
+        this.studentDTO = userDTO;
     }
 
     public String getToken() {
         return token;
     }
 
-    public UserDTO getUserDTO() {
-        return UserDTO;
+    public StudentDTO getStudentDTO() {
+        return studentDTO;
     }
     
 }

@@ -1,11 +1,11 @@
 package com.example.project.dto;
 
-public class UserDTO {
+public class StudentDTO {
     
     private final Long id;
     private final String email;
 
-    public UserDTO(Long id, String email) {
+    public StudentDTO(Long id, String email) {
         this.id = id;
         this.email = email;
     }

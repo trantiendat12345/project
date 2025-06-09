@@ -1,5 +1,5 @@
 package com.example.project.controller;
 
-public class UserCotroller {
+public class StudentCotroller {
     
 }
