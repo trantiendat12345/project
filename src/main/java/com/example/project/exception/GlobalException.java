@@ -10,7 +10,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.example.project.util.Error;
+import com.example.project.util.ErrorResource;
 
 @ControllerAdvice
 public class GlobalException {
@@ -25,7 +25,7 @@ public class GlobalException {
             errors.put(fieldName, errorMessage);
         });
 
-        Error error = new Error("Có vấn đề xảy ra", errors);
+        ErrorResource error = new ErrorResource("Có vấn đề xảy ra", errors);
         
         return new ResponseEntity<>(error,HttpStatus.UNPROCESSABLE_ENTITY);
 

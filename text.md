@@ -89,3 +89,27 @@ IV.xây dựng lớp repository
 
 V. validate dữ liệu
 1. Sử dung @Validated và @Valid trong AuthController
+
+VI. Xây dựng chuỗi JWT 
+
+dùng dependency 
+        <dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-api</artifactId>
+			<version>0.11.5</version>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-impl</artifactId>
+			<version>0.11.5</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-jackson</artifactId>
+			<version>0.11.5</version>
+			<scope>runtime</scope>
+		</dependency>
+mục tiêu tạo ra được chuỗi jwt
+tạo ra chuỗi jwt lưu vào application.properties sử dụng HS512
+

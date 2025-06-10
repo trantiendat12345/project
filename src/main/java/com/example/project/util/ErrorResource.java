@@ -2,7 +2,7 @@ package com.example.project.util;
 
 import java.util.Map;
 
-public class Error {
+public class ErrorResource {
     
     private String message;
     private Map<String, String> errors;
@@ -23,7 +23,7 @@ public class Error {
         return message;
     }
 
-    public Error(String message, Map<String, String> errors) {
+    public ErrorResource(String message, Map<String, String> errors) {
         this.message = message;
         this.errors = errors;
     }
